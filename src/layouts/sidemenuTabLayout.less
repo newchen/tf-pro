@@ -1,0 +1,200 @@
+:global {
+  .tf-sidemenu-tab {
+    // 头部
+    .ant-layout-header {
+      // height: auto;
+      // line-height: inherit;
+      height: 48px;
+      line-height: 48px;
+
+      .tf-layout-header {
+        display: flex;
+        height: 48px;
+        color: white;
+        line-height: 48px;
+        background-color: #292931;// #414454;
+
+        .tf-header-left {
+          display: inline-block;
+          width: 60px;
+          font-size: 16px;
+          text-align: center;
+          cursor: pointer;
+        }
+        .tf-header-middle {
+          flex: 1 1 0%;
+          overflow: hidden;
+
+          .ant-tabs.ant-tabs-card .ant-tabs-card-bar{
+            margin: 19px 0 0 0;
+
+            .ant-tabs-nav-container {
+              height: 30px;
+
+              .ant-tabs-tab-arrow-show {
+                color: #fff;
+
+                &.ant-tabs-tab-btn-disabled {
+                  color: #ccc;
+                }
+
+                .ant-tabs-tab-prev-icon,
+                .ant-tabs-tab-next-icon {
+                  margin-top: -2px;
+                }
+              }
+            }
+            .ant-tabs-tab,
+            .ant-tabs-tab-active{
+              height: 29px;
+              line-height: 29px;
+              border: 0;
+            }
+            .ant-tabs-tab{
+              padding-right: 10px;
+              padding-left: 6px;
+              color: #E2E2F3;
+              background: #4F4F5E;
+
+              .ant-tabs-tab-unclosable {
+                margin-right: 14px;
+              }
+
+              i {
+                font-size: 10px;
+              }
+              // &:hover {
+              //   // color: #3db389;
+              //   .ant-tabs-close-x {
+              //     color: #fff;
+              //   }
+              // }
+              .anticon-reload {
+                visibility: hidden;
+              }
+              .ant-tabs-close-x {
+                margin-top: 2px;
+                color: #f0f2f5;
+
+                &:hover {
+                  color: #fff;
+                }
+              }
+            }
+            .ant-tabs-tab.ant-tabs-tab-active{
+              color: #2F2F2F;
+              background: #F4F5FA;
+
+              // &:hover {
+              //   .anticon-reload,
+              //   .ant-tabs-close-x {
+              //     // color: #fff;
+              //     visibility: visible;
+              //   }
+              // }
+              .anticon-reload,
+              .ant-tabs-close-x {
+                color: rgba(0, 0, 0, 0.45);
+                visibility: visible;
+
+                &:hover {
+                  color: rgba(0, 0, 0, 0.85);
+                }
+
+                svg {
+                  font-size: 10px !important;
+                }
+              }
+            }
+          }
+
+        }
+        .tf-header-right {
+          min-width: 100px;
+          height: 48px;
+
+          .antd-pro-components-page-header-pro-layout-account .antd-pro-components-page-header-pro-layout-avatar {
+            margin: calc((48px - 24px) / 2) 0;
+            margin-right: 8px;
+          }
+          .antd-pro-components-page-header-pro-layout-action {
+            line-height: 48px;
+
+            & > i{
+              color: white;
+            }
+          }
+        }
+      }
+
+    }
+
+    // 左侧菜单
+    .ant-pro-sider-menu-sider {
+      &.ant-layout-sider-collapsed {
+        flex: 0 0 56px !important;
+        max-width: 56px !important;
+        min-width: 56px !important;
+        width: 56px !important;
+
+        &.fix-sider-bar + .ant-layout {
+          padding-left: 56px !important;
+        }
+        & + .ant-layout {
+          .ant-pro-fixed-header {
+            width: calc(100% - 56px) !important;
+          }
+        }
+
+        .ant-pro-sider-menu-logo {
+          padding: 0 12px;
+        }
+
+        .ant-menu-inline-collapsed > .ant-menu-item,
+        .ant-menu-inline-collapsed > .ant-menu-item-group > .ant-menu-item-group-list > .ant-menu-item,
+        .ant-menu-inline-collapsed > .ant-menu-item-group > .ant-menu-item-group-list > .ant-menu-submenu > .ant-menu-submenu-title,
+        .ant-menu-inline-collapsed > .ant-menu-submenu > .ant-menu-submenu-title {
+          padding: 0 20px !important;
+        }
+      }
+
+      .ant-pro-sider-menu-logo {
+        padding: 0 16px;
+        // padding: 0;
+
+        & > a, & > div {
+          height: 48px;
+          line-height: 48px;
+        }
+      }
+
+      .ant-menu {
+        padding: 0 !important;
+
+        .ant-menu-item .anticon,
+        .ant-menu-submenu-title .anticon {
+          margin-right: 8px;
+        }
+      }
+      .ant-menu.ant-menu-dark .ant-menu-item-selected,
+      .ant-menu-submenu-popup.ant-menu-dark .ant-menu-item-selected {
+        background-color: #2778fb;
+      }
+    }
+
+    // 内容区域
+    .ant-pro-basicLayout-content{
+      margin: 0;
+
+      .tf-layout-content {
+        .tf-hide {
+          display: none;
+        }
+
+        .tf-tab-content {
+          // color: red;
+        }
+      }
+    }
+  }
+}
