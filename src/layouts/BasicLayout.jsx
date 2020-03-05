@@ -66,7 +66,8 @@ const BasicLayout = props => {
   } else { // ant-pro布局
     proLayoutProps = {
       onCollapse: handleMenuCollapse,
-      rightContentRender: () => <RightContent />
+      rightContentRender: () => <RightContent />,
+      className: 'ant-pro-basic-layout'
     }
   }
 

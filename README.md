@@ -16,6 +16,7 @@
 4. 可以自动读取路由文件, 不用手动导入(ps: require.context失效了)
 5. 再新增'tf-side-tab'布局
 6. iframe嵌入支持
+7. 无layout情况
 
 
 ## 使用方式
@@ -82,5 +83,7 @@
 
 
 ## 版本更新
-1. 修复fixedHeader:true模式下的样式问题
-2. 新增'tf-sidemenu-tab'布局
+
+0.1.1: 
+  1. tf-side-top-tab布局fixed时tab宽度问题
+  2. 内容高度100%

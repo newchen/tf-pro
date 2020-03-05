@@ -40,6 +40,7 @@ export default class extends Component {
     const {
       middleContentRender,
       rightContentRender,
+      bottomContentRender,
       className: propClassName,
       style,
       ...rest
@@ -48,15 +49,19 @@ export default class extends Component {
     const className = classNames(propClassName, 'tf-layout-header'); // ant-pro-global-header
 
     return (
-      <div className={className} style={style}>
-        {this.renderCollapsedButton()}
-        {
-          middleContentRender
-            ? middleContentRender(rest)
-            : <div style={{ flex: 1 }} />
-        }
-        {rightContentRender && rightContentRender(rest)}
-      </div>
+      <>
+        <div className={className} style={style}>
+          {this.renderCollapsedButton()}
+          {
+            middleContentRender
+              ? middleContentRender(rest)
+              : <div style={{ flex: 1 }} />
+          }
+          {rightContentRender && rightContentRender(rest)}
+        </div>
+
+        { bottomContentRender && bottomContentRender(rest) }
+      </>
     );
   }
 }

@@ -184,15 +184,24 @@
 
     // 内容区域
     .ant-pro-basicLayout-content{
+      display: flex;
+      min-height: 500px !important;
       margin: 0;
 
-      .tf-layout-content {
-        .tf-hide {
-          display: none;
-        }
+      .ant-pro-basicLayout-children-content-wrap {
+        flex: auto;
 
-        .tf-tab-content {
-          // color: red;
+        .tf-layout-content {
+          height: 100%;
+
+          .tf-hide {
+            display: none;
+          }
+
+          .tf-tab-content {
+            min-height: 100%;
+            // color: red;
+          }
         }
       }
     }

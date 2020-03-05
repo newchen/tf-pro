@@ -1,6 +1,6 @@
 {
   "name": "tf-pro",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "private": true,
   "description": "基于Ant Design Pro的增强(支持多标签页)",
   "scripts": {

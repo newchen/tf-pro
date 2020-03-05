@@ -52,7 +52,7 @@ export default ({
               }
               key={tab.key}
               closable={tab.closable === false ? false: true}
-            >{ tab.content }</TabPane>
+            >{ withContent ? tab.content : null }</TabPane>
           ))
         }
       </Tabs>
